@@ -46,6 +46,8 @@ workbook_build/*_report_config.json
 scripts/run_*.ps1
 !scripts/run_department_strict.ps1
 scripts/finalize_*.ps1
+scripts/analyze_calls_ollama.py
+scripts/reclassify_internal_calls.py
 workbook_build/department_report_build.mjs
 workbook_build/kemerovo_report_build.mjs
 workbook_build/multi_department_report_build.mjs
@@ -56,4 +58,3 @@ workbook_build/multi_department_report_build.mjs
 .DS_Store
 Thumbs.db
 Desktop.ini
-
