@@ -1,0 +1,22 @@
+{
+  "templatePath": "Аналитика_звонков.xlsx",
+  "departments": [
+    {
+      "key": "department_key",
+      "name": "Название отдела",
+      "expectedCalls": 100,
+      "inputDir": "department_calls_mp3",
+      "transcriptsDir": "transcripts_department",
+      "analysisDir": "analysis_department_strict_qwen25",
+      "historyPath": "department_calls_mp3/История внешних звонков.xlsx",
+      "analysisPath": "analysis_department_strict_qwen25/analysis_results.jsonl",
+      "analysisSchemaVersion": "calls-strict-2.1"
+    }
+  ],
+  "strictHistoryMapping": true,
+  "sourceInventoryPath": "workbook_build/department_source_inventory.json",
+  "outputDir": "outputs/department_report",
+  "outputFile": "Аналитика_звонков_Отдел.xlsx",
+  "reportTitle": "Аналитика звонков компании «Железная мебель» - Название отдела"
+}
+

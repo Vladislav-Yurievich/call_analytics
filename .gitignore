@@ -1,0 +1,59 @@
+# Local Python and Node runtimes
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+workbook_build/node_modules/
+
+# Secrets and machine-local settings
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Call recordings and call-history exports contain personal data
+*.mp3
+**/История внешних звонков*.xlsx
+*_calls_mp3/
+call_*_mp3/
+calls_*_mp3/
+
+# Generated transcripts, analyses and reclassification data
+transcripts*/
+analysis*/
+*_transcripts/
+*_analysis*/
+internal_reclassification*/
+
+# Generated reports and temporary files
+outputs/
+*.log
+*_pid.txt
+*_status.txt
+*_artifact_started.txt
+*.inspect.ndjson
+errors.log
+
+# Source inventories contain phone numbers and hashes of private audio
+workbook_build/*_source_inventory.json
+
+# Department-specific local configs may contain names, phone mappings and paths
+workbook_build/*_report_config.json
+!workbook_build/report_config.example.json
+
+# Historical one-off launchers/builders with machine-specific paths
+scripts/run_*.ps1
+!scripts/run_department_strict.ps1
+scripts/finalize_*.ps1
+workbook_build/department_report_build.mjs
+workbook_build/kemerovo_report_build.mjs
+workbook_build/multi_department_report_build.mjs
+
+# Editors and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
